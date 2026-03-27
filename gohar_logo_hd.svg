@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="2000" height="2000">
+
+  <!-- White rounded square background -->
+  <rect x="0" y="0" width="500" height="500" rx="60" ry="60" fill="#ffffff"/>
+
+  <!-- Subtle border -->
+  <rect x="1" y="1" width="498" height="498" rx="59" ry="59" fill="none" stroke="#dde4ee" stroke-width="2"/>
+
+  <!-- ===== ICON: Navy ring open at bottom-right (~4 o'clock gap) ===== -->
+  <!-- Ring center: 250,168 | radius 62 | stroke 19 -->
+  <!-- Gap from 20° to 65° (SVG angles: 0°=right, clockwise) -->
+  <!-- Point at 65°: 250+62*cos(65°)=250+26.2=276.2, 168+62*sin(65°)=168+56.2=224.2 -->
+  <!-- Point at 20°: 250+62*cos(20°)=250+58.3=308.3, 168+62*sin(20°)=168+21.2=189.2 -->
+  <path
+    d="M 276.2,224.2
+       A 62,62 0 1,1 308.3,189.2"
+    fill="none"
+    stroke="#0d1f3c"
+    stroke-width="19"
+    stroke-linecap="round"
+  />
+
+  <!-- ===== TWO diagonal bars at top-right of ring ===== -->
+  <g transform="translate(275,133) rotate(-20)">
+    <!-- Bar 1 darker -->
+    <rect x="-17" y="-28" width="13" height="46" rx="2" fill="#1a3d78"/>
+    <!-- Bar 2 lighter -->
+    <rect x="2"   y="-28" width="13" height="46" rx="2" fill="#2e72db"/>
+  </g>
+
+  <!-- ===== GOHAR ===== -->
+  <text
+    x="250"
+    y="315"
+    font-family="'Arial Black', 'Franklin Gothic Heavy', sans-serif"
+    font-size="102"
+    font-weight="900"
+    fill="#0d1f3c"
+    text-anchor="middle"
+    letter-spacing="2"
+  >GOHAR</text>
+
+  <!-- ===== ONLINE STORE ===== -->
+  <text
+    x="250"
+    y="360"
+    font-family="'Arial', 'Helvetica Neue', sans-serif"
+    font-size="26"
+    font-weight="700"
+    fill="#1e55a0"
+    text-anchor="middle"
+    letter-spacing="9"
+  >ONLINE STORE</text>
+
+</svg>
